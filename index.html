@@ -1,34 +1,63 @@
-<!=    <<!DOCTYPE html>
+<!=    <<!<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bite Smile | Fresh Biscuits</title>
 
-<meta name="description" content="Bite Smile - Fresh homemade butter, choco and atta biscuits. Order now.">
-<meta name="keywords" content="Bite Smile biscuits, butter biscuit, choco biscuit, atta biscuit, bakery near me">
+<title>Bite Smile | Order Fresh Biscuits</title>
+
+<meta name="description" content="Bite Smile - Fresh homemade butter, choco and atta biscuits. All India delivery. Order now.">
 
 <style>
+
 body{
   margin:0;
-  font-family: Arial, sans-serif;
+  font-family:Arial, sans-serif;
   background:#fffbea;
+  color:#222;
 }
 
 /* Header */
 header{
   background:linear-gradient(to right, red, yellow, green);
-  color:#222;
-  padding:20px;
+  padding:25px;
   text-align:center;
 }
 
-/* Navigation */
+header h1{
+  margin:0;
+}
+
 nav a{
   margin:0 12px;
   text-decoration:none;
-  color:#222;
   font-weight:bold;
+  color:#222;
+}
+
+/* Buttons */
+.btn{
+  display:inline-block;
+  padding:12px 20px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  margin:6px;
+}
+
+.call{
+  background:red;
+  color:white;
+}
+
+.whatsapp{
+  background:#25D366;
+  color:white;
+}
+
+.order{
+  background:orange;
+  color:black;
 }
 
 /* Section */
@@ -43,8 +72,8 @@ section{
 /* Products */
 .products{
   display:flex;
-  justify-content:space-around;
   flex-wrap:wrap;
+  justify-content:space-around;
   text-align:center;
 }
 
@@ -58,16 +87,29 @@ section{
   border-radius:12px;
 }
 
-/* Call Button */
-.call-btn{
-  display:inline-block;
-  background:red;
+/* Form */
+form input, form textarea{
+  width:90%;
+  padding:10px;
+  margin:8px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+form button{
+  background:green;
   color:white;
   padding:12px 20px;
-  border-radius:30px;
-  text-decoration:none;
-  margin:10px;
+  border:none;
+  border-radius:20px;
   font-weight:bold;
+}
+
+/* QR */
+.qr{
+  width:200px;
+  border:2px solid #ccc;
+  border-radius:10px;
 }
 
 /* Footer */
@@ -77,61 +119,154 @@ footer{
   text-align:center;
   padding:15px;
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
-  <h1>Bite Smile</h1>
-  <p>Fresh • Tasty • Homemade Biscuits</p>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<h1>Bite Smile 🍪</h1>
+<p>Fresh • Homemade • Tasty Biscuits</p>
 
-  <a href="tel:+919971858578" class="call-btn">📞 Call: 99718 58578</a>
-  <a href="tel:+919065595123" class="call-btn">📞 Call: 90655 95123</a>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#products">Products</a>
+  <a href="#order">Order</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<p><b>🚚 All India Delivery Available</b></p>
+
+<a href="#order" class="btn order">🛒 Order Now</a>
+
+<br><br>
+
+<a href="tel:+919971858578" class="btn call">📞 99718 58578</a>
+<a href="tel:+919065595123" class="btn call">📞 90655 95123</a>
+
+<br>
+
+<a href="https://wa.me/919654253442" class="btn whatsapp">💬 WhatsApp 96542 53442</a>
+<a href="https://wa.me/919821255654" class="btn whatsapp">💬 WhatsApp 98212 55654</a>
+
 </header>
 
+
+<!-- HOME -->
+
 <section id="home">
-  <h2>Welcome to Bite Smile</h2>
-  <p>We make fresh and healthy homemade biscuits with love ❤️</p>
-</section>
 
-<section id="products" class="products">
+<h2>Welcome to Bite Smile ❤️</h2>
 
-  <div class="product">
-    <img src="butter.jpg" alt="Butter Biscuit">
-    <h3>Butter Biscuit</h3>
-    <p>Rich buttery taste 🧈</p>
-  </div>
+<p>
+We provide fresh homemade butter, choco and atta biscuits.
+Quality and taste guaranteed.
+</p>
 
-  <div class="product">
-    <img src="choco.jpg" alt="Choco Biscuit">
-    <h3>Choco Biscuit</h3>
-    <p>Chocolate filled delight 🍫</p>
-  </div>
-
-  <div class="product">
-    <img src="atta.jpg" alt="Atta Biscuit">
-    <h3>Atta Biscuit</h3>
-    <p>Healthy wheat goodness 🌾</p>
-  </div>
+<p><b>All State Delivery Available 🚚</b></p>
 
 </section>
+
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+<h2>Our Products</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="butter.jpg">
+<h3>Butter Biscuit 🧈</h3>
+<p>Rich buttery taste</p>
+</div>
+
+<div class="product">
+<img src="choco.jpg">
+<h3>Choco Biscuit 🍫</h3>
+<p>Chocolate delight</p>
+</div>
+
+<div class="product">
+<img src="atta.jpg">
+<h3>Atta Biscuit 🌾</h3>
+<p>Healthy wheat biscuits</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ORDER FORM -->
+
+<section id="order">
+
+<h2>📝 Place Your Order</h2>
+
+<form action="https://formsubmit.co/your-email@gmail.com" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="text" name="phone" placeholder="Mobile Number" required>
+
+<textarea name="address" placeholder="Full Address" required></textarea>
+
+<textarea name="order" placeholder="Write Your Order (Butter/Choco/Atta)" required></textarea>
+
+<button type="submit">Submit Order</button>
+
+</form>
+
+<p>After submit, we will contact you soon 📞</p>
+
+</section>
+
+
+<!-- PAYMENT -->
+
+<section>
+
+<h2>💳 Payment</h2>
+
+<p>Scan & Pay via UPI / GPay / PhonePe</p>
+
+<img src="qr.png" class="qr">
+
+</section>
+
+
+<!-- CONTACT -->
 
 <section id="contact">
-  <h2>Contact Us</h2>
-  <p>📞 99718 58578 / 90655 95123</p>
-  <p>📧 bitesmile@gmail.com</p>
+
+<h2>Contact Us</h2>
+
+<p>📞 99718 58578 / 90655 95123</p>
+
+<p>💬 WhatsApp: 96542 53442 / 98212 55654</p>
+
+<p>📧 bitesmile@gmail.com</p>
+
 </section>
 
+
+<!-- FOOTER -->
+
 <footer>
-  <p>© 2026 Bite Smile | All Rights Reserved</p>
+
+<p>© 2026 Bite Smile | All Rights Reserved</p>
+
+<p>All India Delivery | Fresh Biscuits</p>
+
 </footer>
+
 
 </body>
 </html>
+  
