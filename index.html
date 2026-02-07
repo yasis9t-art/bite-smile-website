@@ -1,200 +1,137 @@
-<!DOCTYPE html>
+<!=    <<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bite & Smile - Fresh Biscuits</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bite Smile | Fresh Biscuits</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fff8ed;
-      color: #333;
-    }
+<meta name="description" content="Bite Smile - Fresh homemade butter, choco and atta biscuits. Order now.">
+<meta name="keywords" content="Bite Smile biscuits, butter biscuit, choco biscuit, atta biscuit, bakery near me">
 
-    header {
-      background: #8b5a2b;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#fffbea;
+}
 
-    header img {
-      width: 150px;
-      margin-bottom: 10px;
-    }
+/* Header */
+header{
+  background:linear-gradient(to right, red, yellow, green);
+  color:#222;
+  padding:20px;
+  text-align:center;
+}
 
-    nav {
-      background: #d2b48c;
-      text-align: center;
-      padding: 10px;
-    }
+/* Navigation */
+nav a{
+  margin:0 12px;
+  text-decoration:none;
+  color:#222;
+  font-weight:bold;
+}
 
-    nav a {
-      margin: 10px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
+/* Section */
+section{
+  background:white;
+  margin:20px;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 0 10px #ccc;
+}
 
-    section {
-      padding: 30px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+/* Products */
+.products{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  text-align:center;
+}
 
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-      gap: 20px;
-    }
+.product{
+  width:250px;
+  margin:15px;
+}
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
-    }
+.product img{
+  width:100%;
+  border-radius:12px;
+}
 
-    .btn {
-      background: #8b5a2b;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 6px;
-      display: inline-block;
-      margin-top: 10px;
-    }
+/* Call Button */
+.call-btn{
+  display:inline-block;
+  background:red;
+  color:white;
+  padding:12px 20px;
+  border-radius:30px;
+  text-decoration:none;
+  margin:10px;
+  font-weight:bold;
+}
 
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-  </style>
-
+/* Footer */
+footer{
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+</style>
 </head>
+
 <body>
 
-<!-- HEADER -->
 <header>
+  <h1>Bite Smile</h1>
+  <p>Fresh • Tasty • Homemade Biscuits</p>
 
-  <!-- Yahan Logo Lagega -->
-  <img src="logo.png" alt="Bite & Smile Logo">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <h1>Bite & Smile</h1>
-  <p>Fresh & Tasty Biscuits</p>
-  <p>500g @ ₹249 | Free Keychain 🎁</p>
-
+  <a href="tel:+919971858578" class="call-btn">📞 Call: 99718 58578</a>
+  <a href="tel:+919065595123" class="call-btn">📞 Call: 90655 95123</a>
 </header>
 
-<!-- MENU -->
-<nav>
-  <a href="#home">Home</a>
-  <a href="#products">Products</a>
-  <a href="#about">About</a>
-  <a href="#order">Order</a>
-</nav>
-
-<!-- HOME -->
 <section id="home">
-
-  <h2>Welcome to Bite & Smile 😄</h2>
-
-  <p>We provide fresh, hygienic and tasty biscuits all over India.</p>
-
-  <p><b>Delivery Available in All Cities 🇮🇳</b></p>
-
-  <a class="btn" href="https://wa.me/919654253442">
-    Order on WhatsApp
-  </a>
-
+  <h2>Welcome to Bite Smile</h2>
+  <p>We make fresh and healthy homemade biscuits with love ❤️</p>
 </section>
 
-<!-- PRODUCTS -->
-<section id="products">
+<section id="products" class="products">
 
-  <h2>Our Products 🍪</h2>
+  <div class="product">
+    <img src="butter.jpg" alt="Butter Biscuit">
+    <h3>Butter Biscuit</h3>
+    <p>Rich buttery taste 🧈</p>
+  </div>
 
-  <div class="products">
+  <div class="product">
+    <img src="choco.jpg" alt="Choco Biscuit">
+    <h3>Choco Biscuit</h3>
+    <p>Chocolate filled delight 🍫</p>
+  </div>
 
-    <div class="card">
-      <h3>Butter Biscuit 🧈</h3>
-      <p>Crispy & Buttery Taste</p>
-      <p><b>₹249 / 500g</b></p>
-      <p>Free Keychain 🎁</p>
-    </div>
-
-    <div class="card">
-      <h3>Atta Biscuit 🌾</h3>
-      <p>Healthy Wheat Biscuits</p>
-      <p><b>₹249 / 500g</b></p>
-      <p>Free Keychain 🎁</p>
-    </div>
-
-    <div class="card">
-      <h3>Choco Biscuit 🍫</h3>
-      <p>Rich Chocolate Flavour</p>
-      <p><b>₹249 / 500g</b></p>
-      <p>Free Keychain 🎁</p>
-    </div>
-
+  <div class="product">
+    <img src="atta.jpg" alt="Atta Biscuit">
+    <h3>Atta Biscuit</h3>
+    <p>Healthy wheat goodness 🌾</p>
   </div>
 
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-
-  <h2>About Us 🏢</h2>
-
-  <p>
-    Bite & Smile is a trusted biscuit brand.
-    We focus on quality, hygiene and customer happiness.
-  </p>
-
-  <p>
-    Our mission is to bring a smile to every customer 😄
-  </p>
-
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>📞 99718 58578 / 90655 95123</p>
+  <p>📧 bitesmile@gmail.com</p>
 </section>
 
-<!-- ORDER -->
-<section id="order">
-
-  <h2>Order Now 📲</h2>
-
-  <p><b>WhatsApp Numbers:</b></p>
-
-  <p>📱 9654253442</p>
-  <p>📱 9821255654</p>
-
-  <h3>Order Format:</h3>
-
-  <p>Name:</p>
-  <p>Address:</p>
-  <p>City & Pincode:</p>
-  <p>Flavour:</p>
-  <p>Quantity:</p>
-  <p>Keychain Letter:</p>
-
-  <a class="btn" href="https://wa.me/919821255654">
-    Place Order
-  </a>
-
-</section>
-
-<!-- FOOTER -->
 <footer>
-
-  <p>© 2026 Bite & Smile | All Rights Reserved</p>
-
+  <p>© 2026 Bite Smile | All Rights Reserved</p>
 </footer>
 
 </body>
 </html>
-<img src="logo.jpg">
