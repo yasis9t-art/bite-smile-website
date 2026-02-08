@@ -4,97 +4,92 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bite & Smile | Fresh Homemade Biscuits</title>
-
-<meta name="description" content="Bite & Smile - Fresh homemade butter, choco and atta biscuits. Order via WhatsApp & Instagram. All India delivery.">
+<title>Bite & Smile | Fresh Biscuits</title>
 
 <style>
 
 body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#fffaf0;
-  color:#333;
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#fffdf5;
+    color:#333;
 }
 
 /* Header */
+
 header{
-  background:#6b3e26;
-  color:white;
-  padding:25px;
-  text-align:center;
+    background:linear-gradient(to right, red, yellow, green);
+    text-align:center;
+    padding:25px;
 }
 
 header h1{
-  margin:0;
-  color:#ffd700;
+    margin:0;
+    font-size:32px;
 }
 
-nav a{
-  margin:0 12px;
-  text-decoration:none;
-  font-weight:bold;
-  color:#fff;
+header p{
+    margin:5px 0;
+    font-weight:bold;
 }
 
 /* Buttons */
+
 .btn{
-  display:inline-block;
-  padding:12px 22px;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:bold;
-  margin:6px;
+    display:inline-block;
+    padding:12px 20px;
+    margin:8px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 .whatsapp{
-  background:#25D366;
-  color:white;
+    background:#25D366;
+    color:white;
 }
 
 .call{
-  background:#ff9800;
-  color:black;
+    background:red;
+    color:white;
 }
 
-.instagram{
-  background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-  color:white;
-}
+/* Sections */
 
-/* Section */
 section{
-  background:white;
-  margin:20px;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 0 10px #ddd;
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 10px #ccc;
 }
 
 /* Products */
+
 .products{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-around;
-  text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 .product{
-  width:260px;
-  margin:15px;
+    width:260px;
+    margin:15px;
+    text-align:center;
 }
 
 .product img{
-  width:100%;
-  border-radius:12px;
+    width:100%;
+    border-radius:12px;
 }
 
 /* Footer */
+
 footer{
-  background:#222;
-  color:white;
-  text-align:center;
-  padding:15px;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
 }
 
 </style>
@@ -106,36 +101,30 @@ footer{
 
 <header>
 
-<h1>Bite & Smile 🍪</h1>
-<p>Fresh • Homemade • Premium Quality Biscuits</p>
+<h1>🍪 Bite & Smile</h1>
+<p>Fresh • Homemade • Premium Biscuits</p>
+<p>🚚 All India Delivery Available</p>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#products">Products</a>
-  <a href="#contact">Contact</a>
-</nav>
+<a href="https://wa.me/919654253442?text=Hello%20Bite%20%26%20Smile,%20I%20want%20to%20order"
+class="btn whatsapp">
+📲 WhatsApp Order
+</a>
 
-<p><b>🚚 All India Delivery Available</b></p>
+<a href="https://wa.me/919065595123?text=Hello%20Bite%20%26%20Smile,%20I%20want%20to%20order"
+class="btn whatsapp">
+📲 WhatsApp Order 2
+</a>
 
-<!-- Order Buttons -->
-
-<a href="https://wa.me/919654253442?text=Hello%20Bite%20%26%20Smile,%20I%20want%20to%20place%20an%20order." 
-class="btn whatsapp">💬 WhatsApp Order 1</a>
-
-<a href="https://wa.me/919065595123?text=Hello%20Bite%20%26%20Smile,%20I%20want%20to%20place%20an%20order." 
-class="btn whatsapp">💬 WhatsApp Order 2</a>
-
-<a href="https://instagram.com/biteandsmile_biscuit_12"
-class="btn instagram" target="_blank">📸 Order on Instagram</a>
-
-<a href="tel:+919971858578" class="btn call">📞 Call Now</a>
+<a href="tel:+919971858578" class="btn call">
+📞 Call Now
+</a>
 
 </header>
 
 
 <!-- HOME -->
 
-<section id="home">
+<section>
 
 <h2>Welcome to Bite & Smile ❤️</h2>
 
@@ -149,29 +138,33 @@ Taste, hygiene and trust in every bite.
 
 <!-- PRODUCTS -->
 
-<section id="products">
+<section>
 
 <h2>Our Best Selling Biscuits</h2>
 
 <div class="products">
 
+
 <div class="product">
-<img src="butter.jpg" alt="Butter Biscuit">
+<img src="butter.jpg">
 <h3>Butter Biscuit 🧈</h3>
 <p>Rich buttery flavor</p>
 </div>
 
+
 <div class="product">
-<img src="choco.jpg" alt="Choco Biscuit">
+<img src="choco.jpg">
 <h3>Choco Biscuit 🍫</h3>
 <p>Chocolate delight</p>
 </div>
 
+
 <div class="product">
-<img src="atta.jpg" alt="Atta Biscuit">
+<img src="atta.jpg">
 <h3>Atta Biscuit 🌾</h3>
 <p>Healthy wheat biscuits</p>
 </div>
+
 
 </div>
 
@@ -180,21 +173,15 @@ Taste, hygiene and trust in every bite.
 
 <!-- CONTACT -->
 
-<section id="contact">
+<section>
 
 <h2>Contact Us</h2>
 
 <p>📞 Call: 99718 58578</p>
 
-<p>💬 WhatsApp: 96542 53442 / 90655 95123</p>
+<p>📲 WhatsApp: 96542 53442 / 90655 95123</p>
 
-<p>📸 Instagram: @YOUR_INSTAGRAM_ID</p>
-
-<a href="https://wa.me/919654253442?text=Hello%20Bite%20%26%20Smile,%20I%20want%20to%20place%20an%20order." 
-class="btn whatsapp">Order on WhatsApp</a>
-
-<a href="https://instagram.com/biteandsmile_biscuit_12"
-class="btn instagram" target="_blank">Order on Instagram</a>
+<p>💬 Order directly on WhatsApp</p>
 
 </section>
 
@@ -204,7 +191,8 @@ class="btn instagram" target="_blank">Order on Instagram</a>
 <footer>
 
 <p>© 2026 Bite & Smile | All Rights Reserved</p>
-<p>Order via WhatsApp & Instagram | All India Delivery</p>
+
+<p>Order via WhatsApp | All India Delivery</p>
 
 </footer>
 
